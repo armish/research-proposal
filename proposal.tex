@@ -1,18 +1,18 @@
 \documentclass[12pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage[margin=1in]{geometry}
 
 \title{Research Proposal}
 \author{B. Arman Aksoy}
-
-\renewcommand{\thesection}{}
-\renewcommand{\thesubsection}{}
-
+\date{}
 
 \begin{document}
 
 \maketitle
 
-\section{Making sense of cancer data: Implications on personalized therapy and basic biology}
+\section*{Making sense of cancer data: Implications on personalized therapy and basic biology}
 Cancer is a complex disease.
 Every cancer is unique in terms of genomic alterations it has.
 Aggregated across all patients, some events are frequent and some are not.
@@ -41,8 +41,38 @@ Want to have a wet-lab component for my lab.
 cell lines will be models for cancer.
 FDA-approved or clinical trial drugs are going to be of interest.
 
-\subsection{Aim 1: Identification and testing of therapeutic individualized vulnerabilities in cancer}
-\subsection{Aim 2: Exploring cancer-specific genomic alterations that reveal biological facts}
-\subsection{Aim 3: Exploiting evolutionary dynamics of cancer cells for driving them to more vulnerable states}
+\subsection*{Aim 1: Identification and testing of therapeutic individualized vulnerabilities in cancer}
+\paragraph{Previous work:} 
+I did this \cite{aksoy2014prediction}.
+Somatic homozygous deletions of chromosomal regions in cancer, while not necessarily oncogenic, may lead to therapeutic vulnerabilities specific to cancer cells compared with normal cells. 
+A recently reported example is the loss of one of the two isoenzymes in glioblastoma cancer cells such that the use of a specific inhibitor selectively inhibited growth of the cancer cells, which had become fully dependent on the second isoenzyme. 
+We have now made use of the unprecedented conjunction of large-scale cancer genomics profiling of tumor samples in The Cancer Genome Atlas (TCGA) and of tumor-derived cell lines in the Cancer Cell Line Encyclopedia, as well as the availability of integrated pathway information systems, such as Pathway Commons, to systematically search for a comprehensive set of such epistatic vulnerabilities. 
+Based on homozygous deletions affecting metabolic enzymes in 16 TCGA cancer studies and 972 cancer cell lines, we identified 4104 candidate metabolic vulnerabilities present in 1019 tumor samples and 482 cell lines. 
+Up to 44\% of these vulnerabilities can be targeted with at least one Food and Drug Administration-approved drug. 
+We suggest focused experiments to test these vulnerabilities and clinical trials based on personalized genomic profiles of those that pass preclinical filters. 
+We conclude that genomic profiling will in the future provide a promising basis for network pharmacology of epistatic vulnerabilities as a promising therapeutic strategy.
 
+\paragraph{Proposed research:}
+I'm gonna do that.
+
+\subsection*{Aim 2: Exploring cancer-specific genomic alterations that reveal biological facts}
+\paragraph{Previous work:}
+I did this \cite{aksoy2014cancer}.
+Mutations in the RNase IIIb domain of DICER1 are known to disrupt processing of 5p-strand pre-miRNAs and these mutations have previously been associated with cancer. 
+Using data from the Cancer Genome Atlas project, we show that these mutations are recurrent across four cancer types and that a previously uncharacterized recurrent mutation in the adjacent RNase IIIa domain also disrupts 5p-strand miRNA processing. 
+Analysis of the downstream effects of the resulting imbalance 5p/3p shows a statistically significant effect on the expression of mRNAs targeted by major conserved miRNA families. 
+In summary, these mutations in DICER1 lead to an imbalance in miRNA strands, which has an effect on mRNA transcript levels that appear to contribute to the oncogenesis.
+
+\paragraph{Proposed research:}
+I'm gonna do that.
+
+\subsection*{Aim 3: Exploiting evolutionary dynamics of cancer cells for driving them to more vulnerable states}
+\paragraph{Proposed work:}
+I'm gonna do that.
+
+\clearpage
+
+\footnotesize{
+\bibliography{proposal}{}
+\bibliographystyle{plain}}
 \end{document}

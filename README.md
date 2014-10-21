@@ -1,4 +1,4 @@
-research-proposal
+Arman's Postdoc Reseach Proposal
 =================
 
-Research proposal for applying to independent postdoc positions
+[![PDF build status](https://www.sharelatex.com/github/repos/armish/research-proposal/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/armish/research-proposal)

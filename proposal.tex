@@ -3,6 +3,7 @@
 \usepackage[english]{babel}
 \usepackage{cite}
 \usepackage[margin=1in]{geometry}
+\usepackage{paralist}
 
 \title{Research Proposal}
 \author{B. Arman Aksoy}
@@ -13,33 +14,40 @@
 \maketitle
 
 \section*{Making sense of cancer data: Implications on personalized therapy and basic biology}
-Cancer is a complex disease.
-Every cancer is unique in terms of genomic alterations it has.
-Aggregated across all patients, some events are frequent and some are not.
-Most studies focus on common, shared and frequent events.
-These are important in the context of old-fashioned, cancer-type-specific clinical trials
-because the target population is huge and big pharma can be persuaded to come up with a drug.
+My research interests are interdiciplinary and lie at the intersection of Computational Biology and Cancer Genomics.
+I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms.
+To this end, my research plans include
+\begin{inparaenum}[(i)]
+ \item developing computational methods to analyze cancer data for generating biological hypotheses;
+ \item using cell lines as models, testing these hypotheses in vitro with the help of basic biological techniques, such as genome editing and high-throughput profiling
+\end{inparaenum}.
 
-But infrequent, yet recurrent events are interesting, too.
-Most rare events can be combined by functional grouping for boosting power.
-People usually do predictions on these events,
-yet no follow-up experimental work.
-These events can tell us interesting stories about human biology
-and can sometimes be exploited for therapy reasons.
+This line of research has recently become more feasiable as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
+The Cancer Genome Atlas (TCGA), Cancer Cell Line Encyclopedia (CCLE), Cancer Genome Project (CGP) and Cancer Therapeutics Response Portal (CTRP) are examples to near-complete data sets that are of interest in this context.
+Initial results from these large-scale projects showed considerable amount of diversity in each cancer sample
+and identified many novel therapuetic targets.
+In addition to these major efforts, with the increased avability and decreased costs of cellular profiling, many cancer profiling projects are now producing data sets that are of comparable size to earlier major efforts.
 
-Studies like TCGA, CCLE and CGP showed that massive profiling data is immensely important.
-Many such projects are follow up and they are going to get bigger and bigger.
-Frequent events will always be frequent as the data set gets bigger and bigger.
-And there are many studies already focusing on these events.
-Considering there is not going to be a single cure for cancer,
-these relatively infrequent events are of high therapeutic interest.
-With the emerging basket clinical trial concept,
-they will become even more interesting.
+These projects have provided unprecedented insights into cancer biology
+and identified many frequent genomic alterations that seem to drive the process where a normal cell become a cancer one.
+In the light of these results, new clinical trials are being established, recruiting patients based on their genomic profiles for a common therapeutic intervention.
+A majority of the events that are observed in patients, however, remain unexplained.
+This is partly due to lack of immediate therapeutic intervention for many alterations
+and partly due to relatively low frequency of these events--hence lack of interest and experimental follow-up.
 
-Have been doing computational work ad, but originally trained as a molecular biologist.
-Want to have a wet-lab component for my lab.
-cell lines will be models for cancer.
-FDA-approved or clinical trial drugs are going to be of interest.
+I have been part of teams that develop computational utilities that help other researchers better 
+investigate cancer genomics data (cBioPortal \cite{gao2014cbioportal, cerami2012cbio}),
+integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013using,babur2014integrating})
+and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
+I have also helped other researchers in our group with integrating these data sources into their analyses \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
+
+Finally, by making use of these knowledge-bases, 
+I showed that 
+\begin{inparaenum}[(i)]
+ \item random passenger genomic events can create patient-specific therapeutic vulnerabilities that can be exploited by targeted-drugs \cite{aksoy2014prediction};
+ \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about infrequent events \cite{aksoy2014cancer}.
+\end{inparaenum}
+
 
 \subsection*{Aim 1: Identification and testing of therapeutic individualized vulnerabilities in cancer}
 \paragraph{Previous work:} 

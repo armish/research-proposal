@@ -1,4 +1,4 @@
-\documentclass[12pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{cite}
@@ -14,15 +14,15 @@
 \maketitle
 
 \section*{Making sense of cancer data: Implications on personalized therapy and basic biology}
-My research interests are interdiciplinary and lie at the intersection of Computational Biology and Cancer Genomics.
-I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms.
+\paragraph{Overview:} My research interests are interdiciplinary and lie at the intersection of Computational Biology and Cancer Genomics.
+I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms that can further be experimentally investigated.
 To this end, my research plans include
 \begin{inparaenum}[(i)]
- \item developing computational methods to analyze cancer data for generating biological hypotheses;
- \item using cell lines as models, testing these hypotheses in vitro with the help of basic biological techniques, such as genome editing and high-throughput profiling
+ \item developing computational methods to analyze cancer data for generating biological hypotheses (dry laboratory);
+ \item using cell lines as models, testing these hypotheses in vitro with the help of basic biological techniques, such as genome editing and high-throughput profiling (wet laboratory)
 \end{inparaenum}.
 
-This line of research has recently become more feasiable as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
+\paragraph{Motivation:} This line of research has recently become more feasiable as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
 The Cancer Genome Atlas (TCGA), Cancer Cell Line Encyclopedia (CCLE), Cancer Genome Project (CGP) and Cancer Therapeutics Response Portal (CTRP) are examples to near-complete data sets that are of interest in this context.
 Initial results from these large-scale projects showed considerable amount of diversity in each cancer sample
 and identified many novel therapuetic targets.
@@ -35,7 +35,7 @@ A majority of the events that are observed in patients, however, remain unexplai
 This is partly due to lack of immediate therapeutic intervention for many alterations
 and partly due to relatively low frequency of these events--hence lack of interest and experimental follow-up.
 
-I have been part of teams that develop computational utilities that help other researchers better 
+\paragraph{Past work: }I have been part of teams that develop computational utilities that help other researchers better 
 investigate cancer genomics data (cBioPortal \cite{gao2014cbioportal, cerami2012cbio}),
 integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013using,babur2014integrating})
 and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
@@ -45,37 +45,44 @@ Finally, by making use of these knowledge-bases,
 I showed that 
 \begin{inparaenum}[(i)]
  \item random passenger genomic events can create patient-specific therapeutic vulnerabilities that can be exploited by targeted-drugs \cite{aksoy2014prediction};
- \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about infrequent events \cite{aksoy2014cancer}.
-\end{inparaenum}
+ \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about infrequent events \cite{aksoy2014cancer}
+\end{inparaenum}.
+
+\paragraph{Future work:} 
+In the short term, I would like to experimentally validate computational predictions on therapeutic vulnerabilities and cancer biology in wet laboratory
+and therefore establish an experimental workflow that can efficiently screen cell line models for these types of vulnerabilities (Aim 1-2).
+In the long term, I would like to work on developing cancer therapy strategies that are tailored to a patient's genomic profile to increase the efficiancy of a therapy (Aim 3).
+
+\subsection*{Research goals}
+\paragraph{Aim 1: Identification and testing of individualized therapeutic vulnerabilities in cancer}
+In the process of a normal cell becoming a cancer cell (oncogenesis),
+it accumulates a considerable number of somatic alterations (such as mutations or copy-number alterations).
+Some of these alterations, called drivers, provide the cells a proliferative advantage,
+but the rest of them have relatively litte effect on the cell and hence are considered passengers.
+Large-scale cancer genomics profiling projects helped identify and test these driver alterations that are recurrently observed across different patient cohorts.
+Low-frequency, passenger events, however, are often unique to patients and tend to effect random parts of the genome.
+
+I previously showed that a considerable amount of passenger alterations create therapeutic vulnerabilities that can be exploited with the use of a targeted drug, creating a unique personalized medicine opportunity \cite{aksoy2014prediction}.
+By making use of data from cancer cell lines,
+I showed that a majority of the vulnerabilities we identified in cancer patients also exist in cell lines
+and allow testing these predictions in cell line models, which was something I was not able to pursue in a computationally oriented lab.
+
+As the next step, I will extend the computational approach to analyze more data sets (both tumor and cell line data) and also to cover the whole cellular pathways for identifying vulnerabilities of therapeutic interest.
+I then will test the most common vulnerabilities that are seen in patients by introducing clinically relevant drugs to the matching cell line models that also have any of these common vulnerabilities.
+In paralell, I will also utilize the recent genome editing tools (CRISPR/Cas9 in particular)
+to screen for pairs of genes that are predicted to be synthetic lethal for the cell.
+The computational prediction part of this work will significantly reduce the number of genes that are of interest,
+and therefore will make it more feasible.
 
 
-\subsection*{Aim 1: Identification and testing of therapeutic individualized vulnerabilities in cancer}
-\paragraph{Previous work:} 
-I did this \cite{aksoy2014prediction}.
-Somatic homozygous deletions of chromosomal regions in cancer, while not necessarily oncogenic, may lead to therapeutic vulnerabilities specific to cancer cells compared with normal cells. 
-A recently reported example is the loss of one of the two isoenzymes in glioblastoma cancer cells such that the use of a specific inhibitor selectively inhibited growth of the cancer cells, which had become fully dependent on the second isoenzyme. 
-We have now made use of the unprecedented conjunction of large-scale cancer genomics profiling of tumor samples in The Cancer Genome Atlas (TCGA) and of tumor-derived cell lines in the Cancer Cell Line Encyclopedia, as well as the availability of integrated pathway information systems, such as Pathway Commons, to systematically search for a comprehensive set of such epistatic vulnerabilities. 
-Based on homozygous deletions affecting metabolic enzymes in 16 TCGA cancer studies and 972 cancer cell lines, we identified 4104 candidate metabolic vulnerabilities present in 1019 tumor samples and 482 cell lines. 
-Up to 44\% of these vulnerabilities can be targeted with at least one Food and Drug Administration-approved drug. 
-We suggest focused experiments to test these vulnerabilities and clinical trials based on personalized genomic profiles of those that pass preclinical filters. 
-We conclude that genomic profiling will in the future provide a promising basis for network pharmacology of epistatic vulnerabilities as a promising therapeutic strategy.
-
-\paragraph{Proposed research:}
-I'm gonna do that.
-
-\subsection*{Aim 2: Exploring cancer-specific genomic alterations that reveal biological facts}
-\paragraph{Previous work:}
+\paragraph{Aim 2: Exploring cancer-specific genomic alterations that reveal biological facts}
 I did this \cite{aksoy2014cancer}.
 Mutations in the RNase IIIb domain of DICER1 are known to disrupt processing of 5p-strand pre-miRNAs and these mutations have previously been associated with cancer. 
 Using data from the Cancer Genome Atlas project, we show that these mutations are recurrent across four cancer types and that a previously uncharacterized recurrent mutation in the adjacent RNase IIIa domain also disrupts 5p-strand miRNA processing. 
 Analysis of the downstream effects of the resulting imbalance 5p/3p shows a statistically significant effect on the expression of mRNAs targeted by major conserved miRNA families. 
 In summary, these mutations in DICER1 lead to an imbalance in miRNA strands, which has an effect on mRNA transcript levels that appear to contribute to the oncogenesis.
 
-\paragraph{Proposed research:}
-I'm gonna do that.
-
-\subsection*{Aim 3: Exploiting evolutionary dynamics of cancer cells for driving them to more vulnerable states}
-\paragraph{Proposed work:}
+\paragraph{Aim 3: Exploiting evolutionary dynamics of cancer cells for a more efficient targeted therapy}
 I'm gonna do that.
 
 \clearpage

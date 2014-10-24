@@ -13,77 +13,81 @@
 
 \maketitle
 
-\section*{Making sense of cancer data: Implications on personalized therapy and basic biology}
-\paragraph{Overview:} My research interests are interdiciplinary and lie at the intersection of Systems Biology, Genomics and Cancer Biology.
+\section*{Making sense of cancer data: Implications on personalized therapy and cancer biology}
+\paragraph{Overview:}
+My research interests are interdisciplinary and lie at the intersection of Systems Biology, Genomics and Cancer Biology.
 I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms that can further be experimentally investigated.
 To this end, my research plans include
 \begin{inparaenum}[(i)]
  \item developing computational methods to analyze cancer data for generating biological hypotheses (dry laboratory);
- \item using cell lines as models, testing these hypotheses in vitro with the help of basic biological techniques, such as genome editing and high-throughput profiling (wet laboratory)
-\end{inparaenum}.
+ \item using cell lines as models, testing these hypotheses \textit{in vitro} with the help of basic biological techniques, such as genome editing and high-throughput profiling (wet laboratory).
+\end{inparaenum}
 
-\paragraph{Motivation:} This line of research has recently become more feasiable as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
-The Cancer Genome Atlas (TCGA), Cancer Cell Line Encyclopedia (CCLE), Cancer Genome Project (CGP) and Cancer Therapeutics Response Portal (CTRP) are examples to near-complete data sets that are of interest in this context.
-Initial results from these large-scale projects showed considerable amount of diversity in each cancer sample
-and identified many novel therapuetic targets.
-In addition to these major efforts, with the increased avability and decreased costs of cellular profiling, many cancer profiling projects are now producing data sets that are of comparable size to earlier major efforts.
+\paragraph{Motivation:}
+This line of research has recently become more feasible as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
+The Cancer Genome Atlas (TCGA), Cancer Cell Line Encyclopedia (CCLE), Cancer Genome Project (CGP) and Cancer Therapeutics Response Portal (CTRP) are examples of near-complete data sets that are of interest in this context.
+In addition to these major efforts, with the increased availability and decreased costs of genomics profiling, many cancer profiling projects are now producing data sets that are of comparable size to earlier major efforts.
 
 These projects have provided unprecedented insights into cancer biology
-and identified many frequent genomic alterations that seem to drive the process where a normal cell become a cancer one.
+and identified many frequent genomic alterations that seem to drive the process where a normal cell become cancerous.
 In the light of these results, new clinical trials are being established, recruiting patients based on their genomic profiles for a common therapeutic intervention.
-A majority of the events that are observed in patients, however, remain unexplained.
-This is partly due to lack of immediate therapeutic intervention for many alterations
+A majority of the events that are observed in patients, however, remain uncharacterized.
+This is partly due to lack of immediate therapeutic interventions that specifically target these alterations 
 and partly due to relatively low frequency of these events--hence lack of interest and experimental follow-up.
+In spite of this, there still remains a lot to learn about Cancer Biology from these previously under-studied events
+and new computational approaches are needed to better understand the biology for driving innovative experimental work.
 
-\paragraph{Past work: }I have been part of teams that develop computational utilities that help other researchers better 
+\paragraph{Past work:}
+I have been part of teams that develop computational utilities that help other researchers better 
 investigate cancer genomics data (cBioPortal \cite{gao2014cbioportal, cerami2012cbio}),
 integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013using,babur2014integrating})
-and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
-I have also helped other researchers in our group with integrating these data sources into their analyses \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
+into their analysis and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
+I also helped others with integrating these data sources into computational approaches developed as part of other studies \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
 
-Finally, by making use of these knowledge-bases, 
+Finally, by making use of these knowledge-bases and cancer genomics data, 
 I showed that 
 \begin{inparaenum}[(i)]
  \item random passenger genomic events can create patient-specific therapeutic vulnerabilities that can be exploited by targeted-drugs \cite{aksoy2014prediction};
- \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about infrequent events \cite{aksoy2014cancer}
+ \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about specific alteration events \cite{aksoy2014cancer}
 \end{inparaenum}.
 
 \paragraph{Future work:} 
 In the short term, I would like to experimentally validate computational predictions on therapeutic vulnerabilities in wet laboratory
-and therefore establish an experimental workflow that can efficiently screen cell line models for these types of vulnerabilities.
-In the long term, I would like to work on developing innovative cancer therapy strategies that turn the biology of cancer cells against themselves.
+and for this, establish an experimental work flow that can efficiently screen cell line models for these types of vulnerabilities.
+In the long term, I would like to work on developing innovative cancer therapy strategies that turn the biology of cancer cells against themselves and prevent emergence of resistance in tumors to the targeted therapies.
 
 \subsection*{Research goals}
-\paragraph{Short term: Identification and testing of individualized therapeutic vulnerabilities in cancer.}
+\paragraph{Short term - Identification and testing of individualized therapeutic vulnerabilities in cancer:}
 A majority of alterations observed in cancer samples occur at low-frequency across patient cohorts
 and do not confer cells any proliferative advantage--therefore are called passenger alterations.
-I previously showed that a considerable amount of passenger alterations create therapeutic vulnerabilities that can be exploited with the use of a targeted drug, creating a unique personalized medicine opportunity \cite{aksoy2014prediction}.
-By making use of data from cancer cell lines,
-I showed that a majority of the vulnerabilities we identified in cancer patients also exist in cell lines
-and allow testing these predictions in cell line models, which was something I was not able to pursue in a computationally oriented lab.
+I previously showed that a considerable amount of passenger alterations create therapeutic vulnerabilities that can be exploited with the use of a targeted drug, creating a unique personalized medicine opportunity for cancer patients \cite{aksoy2014prediction}.
+By making use of data from cancer cell line screening projects,
+I showed that a majority of the vulnerabilities identified in cancer patients also exist in these cell lines,
+enabling testing of these predictions in wet laboratory using cell lines as models.
 
-As the next step, I will extend the computational approach to analyze more data sets (both tumor and cell line data) and also to cover the whole cellular pathways for identifying vulnerabilities of therapeutic interest.
-I then will test the most common vulnerabilities that are seen in patients by introducing clinically relevant drugs to the matching cell line models that also have any of these common vulnerabilities.
-In paralell, I will also utilize the recent genome editing tools (CRISPR/Cas9 in particular)
-to screen for pairs of genes that are predicted to be synthetic lethal for the cell.
+As the next step, I will extend the computational approach to analyze more data sets (both tumor and cell line data) and also to cover all known cellular pathways for identifying vulnerabilities of therapeutic interest.
+I then will test the most common vulnerabilities that are seen in patients by introducing clinically relevant drugs to the matching cell line models that share the vulnerability of interest with patients.
+In parallel, I will also utilize genome editing tools (CRISPR/Cas9 in particular)
+to introduce genomic events into cell line models to screen for pairs of genes that are predicted to be synthetic lethal for the cell.
 The computational prediction part of this work will significantly reduce the number of genes that are of interest,
-and therefore will make it more feasible.
+and therefore will make this approach more feasible.
 
-\paragraph{Long term: Developing therapy strategies that turn the biology of cancer cells against themselves.}
+\paragraph{Long term - Developing therapy strategies that turn the biology of cancer cells against themselves:}
 One of the hallmarks of the cancer cells is their genomic instability, 
-which means that cancer cells are more likely to acquire new mutations compared to a normal cell.
-This enables cancer cells accumulate alterations that confer selective advantage to them under any condition.
+which means that cancer cells are more likely to acquire new mutations compared to normal ones.
+This enables cancer cells accumulate alterations that confer advantage to them under any selective condition.
 This is also one of the reasons why tumors respond to targeted drugs for a relatively short time,
-where emergence to targeted therapy eventually emerges due to evolutionary dynamics of the cancer cells.
+where emergence to targeted therapy eventually emerges due to evolutionary dynamics of the cancer cells
+and the targeted therapy fails for most patients.
 
 The importance of this evolutionary characteristic on understanding of Cancer Biology is two-fold.
-First, retrospective analysis of large-scale genomics projects allow us see repetitive patterns emerge in tumors of different patients, which helps reveal finer details of cancer biology.
-I previously showed that comprehensive analysis of cancer data could show us previously uncharacterized properties of molecular mechanisms -- in our study, this was microRNA processing machinery \cite{aksoy2014cancer}.
+First, analysis of large-scale genomics projects allow us see repetitive patterns emerge in tumors from different patients, which helps reveal finer details of cancer biology.
+I previously showed that comprehensive analysis of cancer data could show us previously uncharacterized properties of molecular mechanisms -- \textit{e.g.}, this was microRNA processing machinery \cite{aksoy2014cancer}.
 Second, this shows us that cancer cells do respond to external perturbation often via acquiring new mutations that counteract the inhibitory effect.
 
 I propose that the latter can be exploited for therapeutic purposes,
-where a carefully planned therapy with multiple targeted drugs can be used for inducing desired genomic alterations in the cells.
-Then the idea is to inhibit carefully selected cellular targets until the cell acquires a set of mutations that will make it intrinsicly instable and likely to undergo apoptosis or senescenece.
+where a carefully planned therapy with multiple targeted drugs can be used for inducing desired genomic alterations into the cancer cells.
+Then the idea is to inhibit carefully selected cellular targets until the cell acquires a set of alterations that will make it intrinsically instable and likely to undergo apoptosis or senescence.
 For this goal, I will again be using cell lines as models for tumors
 and will be focusing on a set of drugs that are of high clinical interest for the exploratory phase.
 

@@ -14,7 +14,7 @@
 \maketitle
 
 \section*{Making sense of cancer data: Implications on personalized therapy and basic biology}
-\paragraph{Overview:} My research interests are interdiciplinary and lie at the intersection of Computational Biology and Cancer Genomics.
+\paragraph{Overview:} My research interests are interdiciplinary and lie at the intersection of Systems Biology, Genomics and Cancer Biology.
 I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms that can further be experimentally investigated.
 To this end, my research plans include
 \begin{inparaenum}[(i)]
@@ -49,12 +49,12 @@ I showed that
 \end{inparaenum}.
 
 \paragraph{Future work:} 
-In the short term, I would like to experimentally validate computational predictions on therapeutic vulnerabilities and cancer biology in wet laboratory
-and therefore establish an experimental workflow that can efficiently screen cell line models for these types of vulnerabilities (Aim 1-2).
-In the long term, I would like to work on developing cancer therapy strategies that are tailored to a patient's genomic profile to increase the efficiancy of a therapy (Aim 3).
+In the short term, I would like to experimentally validate computational predictions on therapeutic vulnerabilities in wet laboratory
+and therefore establish an experimental workflow that can efficiently screen cell line models for these types of vulnerabilities.
+In the long term, I would like to work on developing innovative cancer therapy strategies that turn the biology of cancer cells against themselves.
 
 \subsection*{Research goals}
-\paragraph{Aim 1: Identification and testing of individualized therapeutic vulnerabilities in cancer}
+\paragraph{Short term: Identification and testing of individualized therapeutic vulnerabilities in cancer.}
 A majority of alterations observed in cancer samples occur at low-frequency across patient cohorts
 and do not confer cells any proliferative advantage--therefore are called passenger alterations.
 I previously showed that a considerable amount of passenger alterations create therapeutic vulnerabilities that can be exploited with the use of a targeted drug, creating a unique personalized medicine opportunity \cite{aksoy2014prediction}.
@@ -69,16 +69,23 @@ to screen for pairs of genes that are predicted to be synthetic lethal for the c
 The computational prediction part of this work will significantly reduce the number of genes that are of interest,
 and therefore will make it more feasible.
 
+\paragraph{Long term: Developing therapy strategies that turn the biology of cancer cells against themselves.}
+One of the hallmarks of the cancer cells is their genomic instability, 
+which means that cancer cells are more likely to acquire new mutations compared to a normal cell.
+This enables cancer cells accumulate alterations that confer selective advantage to them under any condition.
+This is also one of the reasons why tumors respond to targeted drugs for a relatively short time,
+where emergence to targeted therapy eventually emerges due to evolutionary dynamics of the cancer cells.
 
-\paragraph{Aim 2: Exploring cancer-specific genomic alterations that reveal biological facts}
-I did this \cite{aksoy2014cancer}.
-Mutations in the RNase IIIb domain of DICER1 are known to disrupt processing of 5p-strand pre-miRNAs and these mutations have previously been associated with cancer. 
-Using data from the Cancer Genome Atlas project, we show that these mutations are recurrent across four cancer types and that a previously uncharacterized recurrent mutation in the adjacent RNase IIIa domain also disrupts 5p-strand miRNA processing. 
-Analysis of the downstream effects of the resulting imbalance 5p/3p shows a statistically significant effect on the expression of mRNAs targeted by major conserved miRNA families. 
-In summary, these mutations in DICER1 lead to an imbalance in miRNA strands, which has an effect on mRNA transcript levels that appear to contribute to the oncogenesis.
+The importance of this evolutionary characteristic on understanding of Cancer Biology is two-fold.
+First, retrospective analysis of large-scale genomics projects allow us see repetitive patterns emerge in tumors of different patients, which helps reveal finer details of cancer biology.
+I previously showed that comprehensive analysis of cancer data could show us previously uncharacterized properties of molecular mechanisms -- in our study, this was microRNA processing machinery \cite{aksoy2014cancer}.
+Second, this shows us that cancer cells do respond to external perturbation often via acquiring new mutations that counteract the inhibitory effect.
 
-\paragraph{Aim 3: Exploiting evolutionary dynamics of cancer cells for a more efficient targeted therapy}
-I'm gonna do that.
+I propose that the latter can be exploited for therapeutic purposes,
+where a carefully planned therapy with multiple targeted drugs can be used for inducing desired genomic alterations in the cells.
+Then the idea is to inhibit carefully selected cellular targets until the cell acquires a set of mutations that will make it intrinsicly instable and likely to undergo apoptosis or senescenece.
+For this goal, I will again be using cell lines as models for tumors
+and will be focusing on a set of drugs that are of high clinical interest for the exploratory phase.
 
 \clearpage
 

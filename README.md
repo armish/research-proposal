@@ -1,4 +1,19 @@
-Arman's Postdoc Reseach Proposal
-=================
+# About
+This is a *work-in-progress*, 2-page research proposal for my indepedent postdoc fellowship applications.
+Fore more information why I am doing this, please visit see this relevant post on my blog:
 
+[http://ergoso.me/career/2014/10/16/the-road-to-independence-independent-postdoc-fellowships.html](http://ergoso.me/career/2014/10/16/the-road-to-independence-independent-postdoc-fellowships.html)
+
+Want to take a look at the PDF version? You can find the latest compiled PDF, from the following link:
+
+[https://www.sharelatex.com/github/repos/armish/research-proposal](https://www.sharelatex.com/github/repos/armish/research-proposal)
+
+Have some feedback for me? Well, I appreciate it! Please feel free to register it as an issue or simply create a pull-request.
+
+# Status
 [![PDF build status](https://www.sharelatex.com/github/repos/armish/research-proposal/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/armish/research-proposal)
+
+# License
+This work by [B. Arman Aksoy](http://arman.aksoy.org) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+![https://i.creativecommons.org/l/by-sa/4.0/88x31.png](http://creativecommons.org/licenses/by-sa/4.0/)

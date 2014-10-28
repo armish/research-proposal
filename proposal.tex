@@ -17,41 +17,38 @@
 
 \section*{Making sense of cancer data: Implications on personalized therapy and cancer biology}
 \paragraph{Overview:}
-My research interests are interdisciplinary and lie at the intersection of Systems Biology, Genomics and Cancer Biology.
-I am specifically interested in interpreting cancer data for discovering therapeutic opportunities and novel biological mechanisms that can further be experimentally investigated.
-To this end, my research plans include
+My research interests lie at the intersection computational and experimental work with a focus in Systems Biology, Genomics and Cancer Biology.
+I am specifically interested in interpreting cancer data to discover therapeutic opportunities and novel biological mechanisms that can further be experimentally investigated in the laboratory.
+My research plans include
 \begin{inparaenum}[(i)]
  \item developing computational methods to analyze cancer data for generating biological hypotheses (dry laboratory);
  \item using cell lines as models, testing these hypotheses \textit{in vitro} with the help of basic biological techniques, such as genome editing and high-throughput profiling (wet laboratory).
 \end{inparaenum}
 
 \paragraph{Motivation:}
-This line of research has recently become more feasible as more and more data sets are becoming publicly available as a result of large-scale cancer genomics profiling and drug screening projects. 
-The Cancer Genome Atlas (TCGA), Cancer Cell Line Encyclopedia (CCLE), Cancer Genome Project (CGP) and Cancer Therapeutics Response Portal (CTRP) are examples of near-complete data sets that are of interest in this context.
-In addition to these major efforts, with the increased availability and decreased costs of genomics profiling, many cancer profiling projects are now producing data sets that are of comparable size to earlier major efforts.
-
-These projects have provided unprecedented insights into cancer biology
-and identified many frequent genomic alterations that seem to drive the process where a normal cell become cancerous.
-In the light of these results, new clinical trials are being established, recruiting patients based on their genomic profiles for a common therapeutic intervention.
-A majority of the events that are observed in patients, however, remain uncharacterized.
-This is partly due to lack of immediate therapeutic interventions that specifically target these alterations 
-and partly due to relatively low frequency of these events--hence lack of interest and experimental follow-up.
-In spite of this, there still remains a lot to learn about Cancer Biology from these previously under-studied events
-and new computational approaches are needed to better understand the biology for driving innovative experimental work.
+In the very near future, every cancer patient coming into the clinics will have their genomic material profiled
+and we will be needing computational approaches that can make sense out of these data sets to enable more effective cancer therapies.
+In the light of what we learned from large-scale projects like the Cancer Genome Atlas (TCGA), 
+new clinical trials that recruit patients based on their genomic profiles for specific targeted therapies are already being established;
+but, there still remains two major challenges in translating what we learn from these data sets into clinics:
+\begin{inparaenum}[(i)]
+ \item a majority of the alterations that we see in patients are not immediately actionable;
+ \item targeted therapies are short-lived, where resistance to such therapies eventually arise and the tumor progresses as a result.
+\end{inparaenum}
 
 \paragraph{Past work:}
-I have been part of teams that develop computational utilities that help other researchers better 
-investigate cancer genomics data (cBioPortal \cite{gao2014cbioportal, cerami2012cbio}),
-integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013using,babur2014integrating})
-into their analysis and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
-I also helped others with integrating these data sources into computational approaches developed as part of other studies \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
-
-Finally, by making use of these knowledge-bases and cancer genomics data, 
-I showed that 
+Making use of public knowledge-bases and cancer genomics data, 
+I previously showed that 
 \begin{inparaenum}[(i)]
  \item random passenger genomic events can create patient-specific therapeutic vulnerabilities that can be exploited by targeted-drugs \cite{aksoy2014prediction};
  \item comprehensive analysis of cancer genomics data sets can reveal interesting biological insights about specific alteration events \cite{aksoy2014cancer}
 \end{inparaenum}.
+
+Moreover, I have developed computational utilities that enable other researchers better 
+investigate cancer genomics data (cBioPortal \cite{gao2014cbioportal, cerami2012cbio}),
+integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013using,babur2014integrating})
+into their analysis and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
+Finally, I have helped others with integrating these data sources into their own computational approaches \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
 
 \paragraph{Future work:} 
 In the short term, I would like to experimentally validate computational predictions on therapeutic vulnerabilities in wet laboratory
@@ -70,11 +67,11 @@ enabling testing of these predictions in wet laboratory using cell lines as mode
 As the next step, I will extend the computational approach to analyze more data sets (both tumor and cell line data) and also to cover all known cellular pathways for identifying vulnerabilities of therapeutic interest.
 I then will test the most common vulnerabilities that are seen in patients by introducing clinically relevant drugs to the matching cell line models that share the vulnerability of interest with patients.
 In parallel, I will also utilize genome editing tools (CRISPR/Cas9 in particular)
-to introduce genomic events into cell line models to screen for pairs of genes that are predicted to be synthetic lethal for the cell.
+to introduce genomic events of interest into cell line models to screen for pairs of genes that are predicted to be synthetic lethal for the cell.
 The computational prediction part of this work will significantly reduce the number of genes that are of interest,
 and therefore will make this approach more feasible.
 
-\paragraph{Long term - Developing therapy strategies that turn the biology of cancer cells against themselves:}
+\paragraph{Long term - Developing therapy strategies that can better prevent emergence of resistance in tumors:}
 One of the hallmarks of the cancer cells is their genomic instability, 
 which means that cancer cells are more likely to acquire new mutations compared to normal ones.
 This enables cancer cells accumulate alterations that confer advantage to them under any selective condition.
@@ -82,9 +79,9 @@ This is also one of the reasons why tumors respond to targeted drugs for a relat
 where emergence to targeted therapy eventually emerges due to evolutionary dynamics of the cancer cells
 and the targeted therapy fails for most patients.
 
-The importance of this evolutionary characteristic on understanding of Cancer Biology is two-fold.
+The importance of this evolutionary characteristic on understanding of cancer biology is two-fold.
 First, analysis of large-scale genomics projects allow us see repetitive patterns emerge in tumors from different patients, which helps reveal finer details of cancer biology.
-I previously showed that comprehensive analysis of cancer data could show us previously uncharacterized properties of molecular mechanisms -- \textit{e.g.}, this was microRNA processing machinery \cite{aksoy2014cancer}.
+I previously showed that comprehensive analysis of cancer data could show us previously uncharacterized properties of molecular mechanisms -- \textit{e.g.} microRNA processing \cite{aksoy2014cancer}.
 Second, this shows us that cancer cells do respond to external perturbation often via acquiring new mutations that counteract the inhibitory effect.
 
 I propose that the latter can be exploited for therapeutic purposes,

@@ -28,7 +28,7 @@ My research plans include
 
 \paragraph{Motivation:}
 In the very near future, all cancer patients coming into the clinics will have their genomic material profiled,
-and we will need computational approaches that can make sense out of these data sets to enable more effective cancer therapies.
+and we will need computational approaches that can make sense out of these data sets to enable more effective cancer therapies based on a patient's genomic profiling results.
 Drawing on what we learned from large-scale projects like The Cancer Genome Atlas (TCGA), 
 new clinical trials that recruit patients based on their genomic profiles for specific targeted therapies are already being established;
 but, there are still two major challenges in translating what we learn from these data sets into the clinic:
@@ -51,10 +51,15 @@ integrate biological pathway data (Pathway Commons and BioPAX \cite{demir2013usi
 into their analysis and query available therapeutic targeted drugs (PiHelper \cite{aksoy2013pihelper}).
 Finally, I have helped others to integrate these data sources into their own computational approaches \cite{ciriello2013emerging,korkut2014perturbation,babur2014systematic}.
 
-\paragraph{Future work:} 
-My first goal is to experimentally validate previous computational predictions on therapeutic vulnerabilities in wet laboratory
-and for this, establish an experimental work flow that can efficiently screen cell line models for these types of vulnerabilities.
-My second goal is to work on developing innovative cancer therapy strategies that turn the biology of cancer cells against themselves and prevent emergence of resistance in tumors to the targeted therapies.
+\paragraph{Future work:}
+My earlier work enabled me to have a good understanding of not only how computational resources can facilitate new discoveries in cancer research,
+but also how to take advantage of high-throughput profiling methods to empower computational approaches to reveal biological insights.
+My proposed research plan, therefore, involves combining experimental and computational methods to investigate cancer biology and advance cancer therapeutics.
+
+Specifically, my first goal is to experimentally validate my earlier predictions on therapeutic vulnerabilities in wet laboratory
+and for this, establish an experimental work flow that can efficiently screen cell line models for synthetic lethality-based vulnerabilities.
+My second goal is to systematically discover drug resistance mechanisms by exploiting evolutionary dynamics of the cancer cells
+with the help of a pooled sequencing approach that will enable computational dissection of molecular characteristics.
 
 \subsection*{Research goals}
 \paragraph{Identification and testing of individualized therapeutic vulnerabilities in cancer:}
@@ -82,23 +87,23 @@ and the targeted therapy fails for most patients.
 
 The importance of this evolutionary characteristic on understanding of cancer biology is twofold.
 First, analysis of large-scale genomics projects lets us see recurring patterns in tumors from different patients, which helps reveal finer details of cancer biology.
-I previously showed that comprehensive analysis of cancer data could show us previously unrecognized properties of molecular mechanisms -- \textit{e.g.} microRNA processing \cite{aksoy2014cancer}.
+For example, I showed that comprehensive analysis of cancer data could show us previously unrecognized properties of molecular mechanisms, such as microRNA processing \cite{aksoy2014cancer}.
 Second, the evolutionary perspective clarifies how cancer cells often respond to external perturbation by acquiring new mutations that counteract the inhibitory effect.
 
 I propose that the latter response can be exploited for therapeutic purposes,
 by using a carefully planned therapy with multiple targeted drugs to induce desired genomic alterations into the cancer cells.
 The idea is to inhibit specific cellular targets until the cell acquires a set of new alterations that will make it intrinsically unstable and likely to undergo apoptosis or senescence.
 
-This approach requires an extensive understanding of resistance mechanisms to be able to exploit them for therapeutic purposes.
+This approach, of course, requires an extensive understanding of resistance mechanisms to be able to exploit them for therapeutic purposes.
 I propose to systematically study these mechanisms in cell lines for drugs that are of high clinical interest.
-Specifically, I will first introduce mutations into cell lines that will significantly lower the fidelity of DNA replication,
+Specifically, I will first introduce (\textit{e.g. POLE}) mutations into cell lines that will considerably lower the fidelity of DNA replication,
 causing them to accumulate mutations relatively faster.
 I will next propagate these cell lines for a determined time to promote genetic diversity within this cell population
 and introduce the drug of interest to the environment to select for cells that are resistant to the particular drug.
 Finally, I will characterize the genomes of resistant cells with the help of pooled sequencing.
 
-This evolutionary and pooled method will accelerate uncovering common resistance mechanisms
-and will enable to computationally identify them in a fast and efficient manner.
+This evolutionary and pooled method will enable to computationally identify them in a fast and efficient manner,
+and hence accelerate uncovering common resistance mechanisms in a systematic way.
 
 \clearpage
 

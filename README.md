@@ -13,6 +13,9 @@ Have some feedback for me? Well, I appreciate it! Please feel free to [register 
 # Status
 [![PDF build status](https://www.sharelatex.com/github/repos/armish/research-proposal/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/armish/research-proposal)
 
+# Versions
+`v4` - DOI: [10.6084/m9.figshare.1239172](http://dx.doi.org/10.6084/m9.figshare.1239172)
+
 # License
 This work by [B. Arman Aksoy](http://arman.aksoy.org) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
